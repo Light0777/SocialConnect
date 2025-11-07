@@ -115,7 +115,8 @@ export default function CreatePostScreen() {
 
       console.log("Sending to backend:", postContent);
 
-      const response = await fetch("http://10.134.54.91:3000/posts", {
+      // to get you device ip run ipconfig in your terminal
+      const response = await fetch("http://your_device_ip/posts", {
         method: "POST",
         headers: {
           Accept: "application/json",
