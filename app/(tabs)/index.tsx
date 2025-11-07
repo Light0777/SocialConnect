@@ -263,7 +263,8 @@ export default function HomeScreen() {
       type: 'image/jpeg',
     } as any);
 
-    const response = await fetch('http://10.134.54.91:3000/api/users/upload', {
+    // to get the ip address run ipconfig in you terminal
+    const response = await fetch('http://your_device_ip_if/api/users/upload', {
       method: 'POST',
       body: formData,
       headers: {
